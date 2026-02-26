@@ -20,5 +20,9 @@ public class Account {
     private Sex sex;
     private LocalDate creationDate;
     private BigDecimal balance = BigDecimal.ZERO;
+
+    public boolean isMale() {
+        return sex.equals("MALE");
+    }
 }
 
